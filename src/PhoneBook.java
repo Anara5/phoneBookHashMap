@@ -9,8 +9,8 @@ public class PhoneBook {
     private HashMap<String, List<Contact>> group = new HashMap<>();
 
     // to add contact to the group in the phone book
-    static Contact createContact(String name, String phone) {
-        return new Contact(name, phone);
+    static Contact createContact(String name, String number) {
+        return new Contact(name, number);
     }
 
     // adding a group name
@@ -33,10 +33,10 @@ public class PhoneBook {
     }
 
     // to show contacts by entering a phone number
-    Contact getByPhone(String phone) {
+    Contact getByPhone(String number) {
         for(List<Contact> contactList : group.values()) {
             for (Contact contact : contactList) {
-                if (contact.getNumber().equals(phone)) return contact;
+                if (contact.getNumber().equals(number)) return contact;
             }
         }
         return null;

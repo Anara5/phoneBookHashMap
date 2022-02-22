@@ -35,6 +35,11 @@ public class Main {
         phoneBook.addContact(
                 PhoneBook.createContact("Alex", "+987 123 45 67"), "Family");
         phoneBook.addContact(
-               PhoneBook.createContact("Anna", "+7932 123 45 98"), "Friends");
+               PhoneBook.createContact("Josef", "+7932 123 45 98"), "Friends");
+        phoneBook.addContact(
+                phoneBook.createContact("Sophia", "+7932 123 45 30"), "Friends");
+        phoneBook.addContact(
+                phoneBook.createContact("Maria", "+46 765 841 32 40"), "Work");
+
     }
 }
