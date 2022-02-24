@@ -19,7 +19,7 @@ public class Main {
         }
 
         System.out.println("\nContact by phone number:");
-        final Contact byPhone = phoneBook.getByPhone("+123 456 78 90");
+        final Contact byPhone = phoneBook.getByPhone("+46 123 456 78 90");
         System.out.println(byPhone);
     }
 
@@ -31,15 +31,14 @@ public class Main {
 
     private static void fillContacts(PhoneBook phoneBook) {
         phoneBook.addContact(
-                PhoneBook.createContact("Anara", "+123 456 78 90"), "Family");
+                PhoneBook.createContact("Anara", "+46 123 456 78 90"), "Family");
         phoneBook.addContact(
-                PhoneBook.createContact("Alex", "+987 123 45 67"), "Family");
+                PhoneBook.createContact("Alex", "+46 876 123 45 67"), "Family");
         phoneBook.addContact(
-               PhoneBook.createContact("Josef", "+7932 123 45 98"), "Friends");
+                PhoneBook.createContact("Josef", "+46 932 123 45 98"), "Friends", "Work");
         phoneBook.addContact(
-                phoneBook.createContact("Sophia", "+7932 123 45 30"), "Friends");
+                PhoneBook.createContact("Sophia", "+7 932 123 45 30"), "Friends");
         phoneBook.addContact(
-                phoneBook.createContact("Maria", "+46 765 841 32 40"), "Work");
-
+                PhoneBook.createContact("Maria", "+46 123 456 78 90"), "Work");
     }
 }
